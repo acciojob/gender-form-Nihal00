@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
-  const [gender, setGender] = useState("");
+  const [gender, setGender] = useState("male");
 
   return (
     <div>
@@ -17,7 +17,7 @@ const App = () => {
         
           {
             (gender === "male") ? <div>
-              <h1>Select your shirt size:</h1>
+              <h2>Select your shirt size:</h2>
               <select>
                 <option>Select size</option>
                 <option>Small</option>
@@ -25,7 +25,7 @@ const App = () => {
                 <option>Large</option>
               </select>
             </div> : <div>
-            <h1>Select your dress size:</h1>
+            <h2>Select your dress size:</h2>
               <select>
                 <option>Select size</option>
                 <option>2</option>
