@@ -17,19 +17,19 @@ const App = () => {
           {
             (gender === "male") ? <div>
               <h2>Select your shirt size:</h2>
-              <select>
-                <option>Select size</option>
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
+              <select name="shirt">
+                <option value="#">Select size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
               </select>
             </div> : <div>
             <h2>Select your dress size:</h2>
-              <select>
-                <option>Select size</option>
-                <option>2</option>
-                <option>4</option>
-                <option>6</option>
+              <select name="dress">
+                <option value="#">Select size</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
               </select>
             </div>
           }
