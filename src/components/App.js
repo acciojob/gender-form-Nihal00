@@ -8,12 +8,11 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <div>
-          <h1>Select your gender:</h1>
-          <label><input type="radio" onClick={() => setGender("shirt")}/> Male</label>
-          <label><input type="radio" onClick={() => setGender("dress")} />Female</label> 
-        </div>
-        <div>
+        
+        <h1>Select your gender:</h1>
+        <label><input type="radio" onClick={() => setGender("shirt")}/> Male</label>
+        <label><input type="radio" onClick={() => setGender("dress")} />Female</label> 
+        
         <h2>Select your {gender} size:</h2>
 
         {
@@ -34,10 +33,6 @@ const App = () => {
           </select>)
         }
 
-        </div>
-        
-          
-        
     </div>
   )
 }
