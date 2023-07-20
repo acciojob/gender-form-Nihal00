@@ -10,10 +10,9 @@ const App = () => {
         {/* Do not remove the main div */}
         <div>
           <h1>Select your gender:</h1>
-          <input type="radio" onClick={(e) => setGender("male")}/><span>Male</span>
-          <input type="radio" onClick={(e) => setGender("female")} /><span>Female</span>
+          <label><input type="radio" onClick={() => setGender("male")}/> Male</label>
+          <label><input type="radio" onClick={() => setGender("female")} />Female</label> 
         </div>
-
         
           {
             (gender === "male") ? <div>
